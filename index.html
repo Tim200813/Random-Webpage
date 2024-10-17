@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freundesgruppe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Lade-Overlay für Animation -->
+    <div class="loader-overlay" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Hauptcontainer für den Inhalt -->
+    <div class="container" id="content">
+        <h1>Willkommen in unserer Randomgruppe!</h1>
+        <p>Wähle eine der folgenden Optionen:</p>
+        
+        <a href="Aktuell.html" class="button">Aktuell</a>
+        <a href="https://calendar.google.com/calendar/u/2?cid=ZTI1MjcyNjA3Yzg1MzI3YWU0MjYyNmRmNGI0OTA4ZmE0ZmVlNGVmMGFlYmIxMWQzYTUxMjVkMTMzOGMxMzhiMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" class="button">Kalender</a>
+        <a href="" class="button">Umfrage</a>
+    </div>
+
+    <!-- Impressum Balken -->
+    <footer>
+        <p>Impressum: <a href="impressum.html">Hier klicken</a></p>
+    </footer>
+
+    <script>
+        // Startanimation: Seite laden und Inhalt anzeigen
+        window.addEventListener("load", function() {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
+            content.style.opacity = "1";
+            content.style.transform = "translateY(0)";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Grundlegendes Styling für den Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(https://images4.alphacoders.com/133/thumb-1920-1337222.jpeg) no-repeat center center fixed;
+    background-size: cover; /* Hintergrundbild passt sich an die Größe an */
+    color: #333; /* Dunkelgrauer Text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Hauptcontainer für das Impressum */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Styling für die Überschrift */
+h1 {
+    font-size: 2.5em;
+    color: #007BFF; /* Kräftiges Blau für die Überschrift */
+    margin-bottom: 20px;
+}
+
+/* Styling für den Text */
+p {
+    font-size: 1.2em;
+    color: #666; /* Grau für den Text */
+    line-height: 1.6; /* Bessere Lesbarkeit durch Zeilenhöhe */
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007BFF; /* Blau für den Footer-Hintergrund */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1em;
+}
+
+/* Link im Footer */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #dcdcdc;
+}
+
+/* Responsives Design für mobile Geräte */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Anpassung des Hintergrunds für kleinere Geräte */
+    body {
+        background-position: center; /* Hintergrund bleibt zentriert */
+        background-attachment: scroll; /* Kein feststehendes Hintergrundbild auf mobilen Geräten */
+    }
+}
